@@ -10,7 +10,7 @@ namespace BulkyWeb.Models
         [Required]
         [DisplayName("Category Name")]
         [MaxLength(30)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
         [DisplayName("Display Order")]
         [Range(1,100,ErrorMessage ="Please enter a valid value")]
         public int DisplayOrder { get; set; }
